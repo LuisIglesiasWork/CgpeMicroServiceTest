@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6ma+PbR+4EHqedVsQmLMvRNBym7/Sl2QfNwcJMWYrkr1D1r5IJmqjKh629UEmUbzBYduwFt6G3m2AguKWjfGzQ==",
+  "dgSpecHash": "aa7ZcvDoQn5m7BN3RO3vx+KTxu8a+iyUV1PJpbPNtH6qkgEjpb9vA2zI05LSUMoLKEcofBjCIJQRBzz2hYFpwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.CrossCuttings\\Cgpe.Du.CrossCuttings.csproj",
+  "projectFilePath": "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.CrossCuttings\\Cgpe.Du.CrossCuttings.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lIgle\\.nuget\\packages\\dotnetcore.npoi\\1.2.3\\dotnetcore.npoi.1.2.3.nupkg.sha512",
     "C:\\Users\\lIgle\\.nuget\\packages\\dotnetcore.npoi.core\\1.2.3\\dotnetcore.npoi.core.1.2.3.nupkg.sha512",

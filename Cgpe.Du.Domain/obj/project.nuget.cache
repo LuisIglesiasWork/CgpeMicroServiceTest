@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DU6MnPqZPhDlvqTqMTMMwLYMq9nuG/I635QISXdH8YeMU6wk8yzqqR0GZofpw1hf+7c9DsG2t8+jg8KWGdWi9g==",
+  "dgSpecHash": "Peh/uDgl/PGtqQHL7rYj4GakvxADLzCpnmmuYGUgMKIyFb/7wbyyHtwKc0fz4uf1jArJJ22HaS2iaApBSHx8SQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.Domain\\Cgpe.Du.Domain.csproj",
+  "projectFilePath": "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Domain\\Cgpe.Du.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lIgle\\.nuget\\packages\\libuv\\1.10.0\\libuv.1.10.0.nupkg.sha512",
     "C:\\Users\\lIgle\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.14\\microsoft.aspnetcore.connections.abstractions.6.0.14.nupkg.sha512",

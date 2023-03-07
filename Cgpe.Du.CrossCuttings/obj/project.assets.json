@@ -5613,11 +5613,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.CrossCuttings\\Cgpe.Du.CrossCuttings.csproj",
+      "projectUniqueName": "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.CrossCuttings\\Cgpe.Du.CrossCuttings.csproj",
       "projectName": "Cgpe.Du.CrossCuttings",
-      "projectPath": "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.CrossCuttings\\Cgpe.Du.CrossCuttings.csproj",
+      "projectPath": "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.CrossCuttings\\Cgpe.Du.CrossCuttings.csproj",
       "packagesPath": "C:\\Users\\lIgle\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.CrossCuttings\\obj\\",
+      "outputPath": "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.CrossCuttings\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5638,11 +5638,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.Domain.Entities\\Cgpe.Du.Domain.Entities.csproj": {
-              "projectPath": "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.Domain.Entities\\Cgpe.Du.Domain.Entities.csproj"
+            "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Domain.Entities\\Cgpe.Du.Domain.Entities.csproj": {
+              "projectPath": "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Domain.Entities\\Cgpe.Du.Domain.Entities.csproj"
             },
-            "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.Domain\\Cgpe.Du.Domain.csproj": {
-              "projectPath": "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.Domain\\Cgpe.Du.Domain.csproj"
+            "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Domain\\Cgpe.Du.Domain.csproj": {
+              "projectPath": "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Domain\\Cgpe.Du.Domain.csproj"
             }
           }
         }

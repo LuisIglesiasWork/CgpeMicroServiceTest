@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.Domain.Entities\\Cgpe.Du.Domain.Entities.csproj": {}
+    "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Domain.Entities\\Cgpe.Du.Domain.Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.Domain.Entities\\Cgpe.Du.Domain.Entities.csproj": {
+    "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Domain.Entities\\Cgpe.Du.Domain.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.Domain.Entities\\Cgpe.Du.Domain.Entities.csproj",
+        "projectUniqueName": "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Domain.Entities\\Cgpe.Du.Domain.Entities.csproj",
         "projectName": "Cgpe.Du.Domain.Entities",
-        "projectPath": "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.Domain.Entities\\Cgpe.Du.Domain.Entities.csproj",
+        "projectPath": "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Domain.Entities\\Cgpe.Du.Domain.Entities.csproj",
         "packagesPath": "C:\\Users\\lIgle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.Domain.Entities\\obj\\",
+        "outputPath": "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Domain.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G6dJKFim6hxNDWst6kO+fdFKtQj+ezHXr2hJtU07oB5zHgIegdf2R/qWd5bkSXdkaczHgJOPGdJ3duOGUnS5tw==",
+  "dgSpecHash": "nWmgzF2za0tEoYymtMWyLSjFgkcPbVFIfQqDtnpfgxp0S+Itgot721Hri2BWekeToPs//5zXGXlaLSNFUe90eQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lIgle\\source\\repos\\CGPE.DU3.MICROSERVICES\\Cgpe.Du.CrossCuttings\\Cgpe.Du.Infrastructure\\Cgpe.Du.Infrastructure.csproj",
+  "projectFilePath": "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Infrastructure\\Cgpe.Du.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lIgle\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
     "C:\\Users\\lIgle\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
