@@ -1,0 +1,17 @@
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\obj\Debug\net6.0\Cgpe.Du.Domain.csproj.AssemblyReference.cache
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\obj\Debug\net6.0\Cgpe.Du.Domain.Properties.Resources.resources
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\obj\Debug\net6.0\Cgpe.Du.Domain.csproj.GenerateResource.cache
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\obj\Debug\net6.0\Cgpe.Du.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\obj\Debug\net6.0\Cgpe.Du.Domain.AssemblyInfoInputs.cache
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\obj\Debug\net6.0\Cgpe.Du.Domain.AssemblyInfo.cs
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\obj\Debug\net6.0\Cgpe.Du.Domain.csproj.CoreCompileInputs.cache
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\bin\Debug\net6.0\Cgpe.Du.Domain.deps.json
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\bin\Debug\net6.0\Cgpe.Du.Domain.dll
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\bin\Debug\net6.0\Cgpe.Du.Domain.pdb
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\bin\Debug\net6.0\Cgpe.Du.Domain.Entities.dll
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\bin\Debug\net6.0\Cgpe.Du.Domain.Entities.pdb
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\obj\Debug\net6.0\Cgpe.Du.Domain.csproj.CopyComplete
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\obj\Debug\net6.0\Cgpe.Du.Domain.dll
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\obj\Debug\net6.0\refint\Cgpe.Du.Domain.dll
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\obj\Debug\net6.0\Cgpe.Du.Domain.pdb
+C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain\obj\Debug\net6.0\ref\Cgpe.Du.Domain.dll

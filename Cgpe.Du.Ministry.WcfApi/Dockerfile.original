@@ -1,0 +1,86 @@
+#Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
+#For more information, please see https://aka.ms/containercompat
+ARG REPO=mcr.microsoft.com/dotnet/framework/aspnet
+FROM $REPO:4.8.1-20230214-windowsservercore-ltsc2022
+
+RUN mkdir C:Du3MicroService
+
+COPY ./ .
+
+# Copy the contents of certs directory from the local machine to
+# a new directory certs inside the container
+#COPY ./certs/ ./certs/
+
+# Install Windows components required for WCF service hosted on IIS
+RUN dism /Online /Quiet /Enable-Feature /All /FeatureName:WCF-HTTP-Activation45 /FeatureName:WCF-TCP-Activation45 /FeatureName:IIS-WebSockets
+
+RUN powershell.exe -Command "\
+### The following 2 imports are necessary to do the below SslBindings ; \
+  Import-Module IISAdministration; \
+  Import-Module WebAdministration;"
+
+##create new website based on the code. You need to pass port as 443, and the Ssl parameters in order to correctly setup SSL/HTTPS.
+RUN powershell New-WebSite -Name "cgpedu3microservice" -IPAddress '0.0.0.0' -Port 44318 -PhysicalPath 'C:\Du3MicroService' -ApplicationPool '.NET' -Ssl -SslFlags 0;
+RUN powershell New-WebBinding -Name "cgpedu3microservice" -IP "*" -Port 44318 -Protocol http;
+
+##Pull the base image to use
+#FROM mcr.microsoft.com/windows/servercore/iis
+#Enable verbose output in case of errors
+SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop';"]
+#install all needed features of IIS
+RUN Import-Module servermanager ;\
+    #Install-WindowsFeature -name Web-Server -IncludeManagementTools ;\
+    Install-WindowsFeature -name Web-Basic-Auth ;\
+    Install-WindowsFeature -name Web-Windows-Auth ;\
+    #Install-WindowsFeature -name Web-Net-Ext45 ;\
+    #Install-WindowsFeature -name Web-ISAPI-Ext ;\
+    #Install-WindowsFeature -name Web-ISAPI-Filter ;\
+    Install-WindowsFeature -name Web-WHC ;\
+    #Install-WindowsFeature NET-Framework-45-ASPNET ; \
+    #Install-WindowsFeature Web-Asp-Net45 ;\
+    Install-WindowsFeature -Name Web-Mgmt-Service ;\
+    Install-WindowsFeature -name Web-Mgmt-Tools ;\
+    Install-WindowsFeature -name Web-Mgmt-Compat ;\
+    Install-WindowsFeature -name Web-Scripting-Tools ;\
+    Dism /online /enable-feature /featurename:IIS-ManagementService /all ;\
+    ##Still inside the same run command, enable remote management for IIS on docker
+    New-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\WebManagement\Server -Name EnableRemoteManagement -Value 1 -Force ;\
+    Get-Service -Name WMSVC | Start-Service ;\
+    Set-Service –Name WMSVC –StartupType 'Automatic' ;
+    ##In the same run Command add the user and password for IIS remote management
+        #net user myuser superP@ss123 /ADD ;\
+        #net localgroup administrators myuser /add
+
+    #COPY . myapp
+    #RUN New-WebAppPool myapp
+##The configStore is an application of a website, so add it as such to the service
+#RUN Import-Module WebAdministration; Get-Module ;\
+    #New-Item 'IIS:Sites\Default Web Site\myapp' -physicalPath 'c:\myapp' -ApplicationPool 'myapp' -type 'Application'
+#
+#EXPOSE 51329 80
+
+## Filepath refers to the path of cert files inside the container's file system
+#RUN powershell Import-PfxCertificate -FilePath C:\Du3MicroService\certs\localhost.pfx -CertStoreLocation Cert:\localMachine\My  -Password $pwd;
+#
+
+
+  ## If you have a password on your SSL Cert, put it here as it needs "secured". If not, remove this line and the argument below it; \
+#RUN powershell $pwd = ConvertTo-SecureString -String 'APJ8VvQY' -Force -AsPlainText; \
+  ##### Import the certificate and store it in a variable to bind to later; \
+  #$sslCert = powershell Import-PfxCertificate -FilePath 'C:\Du3MicroService\certs\localhost.pfx' -CertStoreLocation Cert:\localMachine\My  -Password $pwd; \
+  ##$cert =  Get-ChildItem -Path Cert:\LocalMachine\My ^| Where-Object {$_.Subject.Contains("localhost")}; \
+  ##$cert = Import-PfxCertificate -Exportable -FilePath 'C:\Du3MicroService\certs\localhost.pfx' -CertStoreLocation cert:\localMachine\My -Password $pwd; \
+  ##### Take the imported certificate and bind it to all traffic toward port 443 (you need to specify IP if you want multiple apps on 1 docker which I believe is ill-advised); \
+  #(Get-WebBinding -Name "cgpedu3microservice" -Protocol "http").AddSslCertificate($sslCert.GetCertHashString(),'My');
+  #%windir%\system32\inetsrv\appcmd set binding "*!44318/" -value $cert;
+EXPOSE 44318 443
+#
+##RUN Powershell new-item -path "IIS:\SslBindings\0.0.0.0!44318" ;
+ ##$ip = '127.0.0.1' \
+ ##$binding= '{0}:443:Du3MicroService' -f $ip \
+  ##New-Item IIS:\Sites\Du3MicroService -bindings @{protocol='http'; bindingInformation='Du3MicroService'} -PhysicalPath C:\inetpub\Du3MicroService;
+#
+ ##RUN windows\system32\inetsrv\appcmd.exe set app '/Du3MicroService' /enabledProtocols:"http,net.tcp"
+#
+## Copies the site you published earlier into the container.
+#COPY ./ .

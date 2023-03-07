@@ -1,0 +1,43 @@
+﻿using System.Runtime.Serialization;
+using System.Xml.Serialization;
+
+namespace Cgpe.Du.Ministry.WcfApi.Contracts
+{
+
+    public class colegiado
+    {
+
+        public tipoIdentificacion tipoIdentificacion { get; set; }
+        public string numeroIdentificacion { get; set; }
+
+        // NUEVOS CAMPOS
+        public tipoIdentificacion tipoIdentificacionOld { get; set; }
+        [XmlIgnore]
+        public bool tipoIdentificacionOldSpecified
+        {
+            get
+            {
+                return !string.IsNullOrWhiteSpace(this.numeroIdentificacionOld);
+            }
+        }
+
+        public string numeroIdentificacionOld { get; set; }
+        // FIN NUEVOS CAMPOS
+
+        public string nombre { get; set; }
+        public string primerApellido { get; set; }
+        public string segundoApellido { get; set; }
+        public sexo sexo { get; set; }
+        [XmlArrayItemAttribute("telefono", IsNullable = false)]
+        public string[] telefonos { get; set; }
+        [XmlArrayItemAttribute("correoElectronico", IsNullable = false)]
+        public string[] correosElectronicos { get; set; }
+        [XmlArrayItemAttribute("fax", IsNullable = false)]
+        public string[] faxes { get; set; }
+        public direccion[] direcciones { get; set; }
+        public situacionProfesional situacionProfesional { get; set; }
+        public colegio[] colegios { get; set; }
+
+    }
+
+}

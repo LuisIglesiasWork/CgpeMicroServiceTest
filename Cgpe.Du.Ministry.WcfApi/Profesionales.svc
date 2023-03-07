@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Cgpe.Du.Ministry.WcfApi.Profesionales" CodeBehind="Profesionales.svc.cs" %>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AssociationMandatoryFields" xml:space="preserve">
+    <value>CGPE: Association Mandatory Fields are null or empty</value>
+  </data>
+  <data name="AssociationNotFound" xml:space="preserve">
+    <value>CGPE: Association not found</value>
+  </data>
+  <data name="AssociationSignedDataEmpty" xml:space="preserve">
+    <value>CGPE Signed Data String is empty</value>
+  </data>
+  <data name="AuditOperationNotSupported" xml:space="preserve">
+    <value>CGPE: Operación de auditoria con el Id "{0}" no soportada</value>
+  </data>
+  <data name="AuthenticationException" xml:space="preserve">
+    <value>CGPE: No se ha podido autenticar al usuario</value>
+  </data>
+  <data name="MandatoryFields" xml:space="preserve">
+    <value>CGPE: El campo "{0}" es obligatorio</value>
+  </data>
+  <data name="ProcuratorMandatoryFields" xml:space="preserve">
+    <value>CGPE: Procurator Mandatory Fields are null or empty</value>
+  </data>
+  <data name="ProcuratorNotFound" xml:space="preserve">
+    <value>CGPE: Procurator not found</value>
+  </data>
+  <data name="ProcuratorSignedDataEmpty" xml:space="preserve">
+    <value>CGPE: Signed Data String is empty </value>
+  </data>
+  <data name="TypeIsNotSupported" xml:space="preserve">
+    <value>CGPE: Source Type "{0}" and Destination Type "{1}" are not supported</value>
+  </data>
+  <data name="UnathorizedAccessBOE" xml:space="preserve">
+    <value>CGPE: No dispone de los permisos necesarios para consultar los procuradores adheridos al convenio con el BOE.</value>
+  </data>
+  <data name="UnauthorizedAccessCreateProcurators" xml:space="preserve">
+    <value>CGPE: No dispone de permisos necesarios para crear un Procurador</value>
+  </data>
+  <data name="UnauthorizedAccessCreateUser" xml:space="preserve">
+    <value>CGPE: No dispone de permisos necesarios para crear un Usuario</value>
+  </data>
+  <data name="UnauthorizedAccessGetAssociations" xml:space="preserve">
+    <value>CGPE: No dispone de permisos necesarios para consultar una Lista de Colegios</value>
+  </data>
+  <data name="UnauthorizedAccessGetProcurators" xml:space="preserve">
+    <value>CGPE: No dispone de permisos necesarios para consultar una Lista de Procuradores</value>
+  </data>
+  <data name="UnauthorizedAccessGetUsers" xml:space="preserve">
+    <value>CGPE: No dispone de permisos necesarios para consultar una Lista de usuarios</value>
+  </data>
+  <data name="UnauthorizedAccessUpdateAssociation" xml:space="preserve">
+    <value>CGPE: No dispone de permisos necesarios para actualizar los datos de un Colegio</value>
+  </data>
+  <data name="UnauthorizedAccessUpdateProcurators" xml:space="preserve">
+    <value>CGPE: No dispone de permisos necesarios para actualizar los datos de un Procurador</value>
+  </data>
+  <data name="UnauthorizedAccessUpdateUser" xml:space="preserve">
+    <value>CGPE: No dispone de permisos necesarios para actualizar los datos de un Usuario</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>CGPE: El usuario con el Id "{0}" no existe</value>
+  </data>
+  <data name="warning_InvalidArgumentForFindRecords" xml:space="preserve">
+    <value>CGPE: Invalid Arguments</value>
+  </data>
+  <data name="warning_SearchIdIsNullEmpty" xml:space="preserve">
+    <value>CGPE: Id is null, empty or Guid.Empty</value>
+  </data>
+</root>

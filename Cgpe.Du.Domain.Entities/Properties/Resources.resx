@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AssociationRequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "Colegio" es obligatorio.</value>
+  </data>
+  <data name="AssociationsProcuratorsRequiredValidation" xml:space="preserve">
+    <value>CGPE: El procurador tiene que tener al menos una colegiación.</value>
+  </data>
+  <data name="BirthCityRequiredValidation" xml:space="preserve">
+    <value>CGPE: El lugar de nacimiento es obligatorio.</value>
+  </data>
+  <data name="BirthDateRequiredValidation" xml:space="preserve">
+    <value>CGPE: La fecha de nacimiento es obligatoria.</value>
+  </data>
+  <data name="CentralitaInvalidValidation" xml:space="preserve">
+    <value>CGPE: El campo "Centralita" no es valido.</value>
+  </data>
+  <data name="CentralitaRequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "Centralita" es obligatorio.</value>
+  </data>
+  <data name="CityRequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "Localidad" es obligatorio.</value>
+  </data>
+  <data name="ElectedDateRequiredValidation" xml:space="preserve">
+    <value>CGPE: La fecha de elección del cargo es obligatoria.</value>
+  </data>
+  <data name="EmailInvalidValidation" xml:space="preserve">
+    <value>CGPE: El campo "Email" no es válido.</value>
+  </data>
+  <data name="EmailRequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "Email" es obligatorio.</value>
+  </data>
+  <data name="FaxInvalidValidation" xml:space="preserve">
+    <value>CGPE: El campo "Fax" no es valido.</value>
+  </data>
+  <data name="FaxRequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "Fax" es obligatorio.</value>
+  </data>
+  <data name="FullAddressRequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "Dirección Completa" es obligatorio.</value>
+  </data>
+  <data name="HonourDateRequiredValidation" xml:space="preserve">
+    <value>CGPE: La fecha de concesión de la distinción es obligatoria.</value>
+  </data>
+  <data name="HonourLiteralRequiredValidation" xml:space="preserve">
+    <value>CGPE: La descripción de la distinción es obligatoria si el tipo de distinción es "Otra".</value>
+  </data>
+  <data name="HonourTypeRequiredValidation" xml:space="preserve">
+    <value>CGPE: El tipo de distinción es obligatorio.</value>
+  </data>
+  <data name="LawDegreeOrEquivalentRequiredValidation" xml:space="preserve">
+    <value>CGPE: Es obligatorio rellenar al menos uno de los siguientes campos:  fecha de expedición de licenciatura, fecha de expedición de grado, u otros estudios.</value>
+  </data>
+  <data name="MailBoxInvalidValidation" xml:space="preserve">
+    <value>CGPE: El apartado de correos no es valido. El formato correcto es un valor numérico de 2 a 5 posiciones.</value>
+  </data>
+  <data name="MasterDegreeDateRequiredValidation" xml:space="preserve">
+    <value>CGPE: La fecha de expedición del máster es obligatoria si se rellena la fecha de expedición del grado.</value>
+  </data>
+  <data name="MobileInvalidValidation" xml:space="preserve">
+    <value>CGPE: El campo "Movil" no es valido.</value>
+  </data>
+  <data name="MobileRequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "Movil" es obligatorio.</value>
+  </data>
+  <data name="NameInvalidValidation" xml:space="preserve">
+    <value>CGPE: El campo "Nombre" no es válido. Debe incluir una palabra de 1 carácter al menos.</value>
+  </data>
+  <data name="NameRequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "Nombre" es obligatorio.</value>
+  </data>
+  <data name="NifInvalidValidation" xml:space="preserve">
+    <value>CGPE: El número de documento (NIF) no es valido.</value>
+  </data>
+  <data name="NifRequiredValidation" xml:space="preserve">
+    <value>CGPE: El número de documento (NIF) es obligatorio.</value>
+  </data>
+  <data name="NumberOfAssociatedInvalidValidation" xml:space="preserve">
+    <value>CGPE: El número  de colegiado no es valido. El formato consta de 6 dígitos.</value>
+  </data>
+  <data name="NumberOfAssociatedRequiredValidation" xml:space="preserve">
+    <value>CGPE: El número  de colegiado es obligatorio.</value>
+  </data>
+  <data name="OrganizationRequiredValidation" xml:space="preserve">
+    <value>CGPE: El organismo del cargo es obligatorio.</value>
+  </data>
+  <data name="OrganRequiredValidation" xml:space="preserve">
+    <value>CGPE: El órgano del cargo es obligatorio.</value>
+  </data>
+  <data name="PhoneInvalidValidation" xml:space="preserve">
+    <value>CGPE: El campo "Teléfono" no es valido.</value>
+  </data>
+  <data name="PhoneRequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "Teléfono" es obligatorio.</value>
+  </data>
+  <data name="ProcuratorDegreeDateRequiredValidation" xml:space="preserve">
+    <value>CGPE: La fecha de expedición del título de procurador es obligatoria.</value>
+  </data>
+  <data name="ProvinceRequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "Provincia" es obligatorio.</value>
+  </data>
+  <data name="RoleRequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "Rol" es obligatorio.</value>
+  </data>
+  <data name="SecondName1InvalidValidation" xml:space="preserve">
+    <value>CGPE: El campo "Apellido 1" no es válido. Debe incluir una palabra de 1 carácter al menos.</value>
+  </data>
+  <data name="SecondName1RequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "Apellido 1" es obligatorio.</value>
+  </data>
+  <data name="SecondName2InvalidValidation" xml:space="preserve">
+    <value>CGPE: El campo "Apellido 2" no es válido. Debe incluir una palabra de 1 carácter al menos.</value>
+  </data>
+  <data name="StateDateRequiredValidation" xml:space="preserve">
+    <value>CGPE: Fecha de estado es obligatoria.</value>
+  </data>
+  <data name="UniqueNumberOfAssociatedInvalidValidation" xml:space="preserve">
+    <value>CGPE: El número único de colegiado no es valido. El formato debe ser P12345678901.</value>
+  </data>
+  <data name="UniqueNumberOfAssociatedRequiredValidation" xml:space="preserve">
+    <value>CGPE: El número único de colegiado es obligatorio.</value>
+  </data>
+  <data name="WebInvalidValidation" xml:space="preserve">
+    <value>CGPE: El campo "URL" no es valido.</value>
+  </data>
+  <data name="WebRequiredValidation" xml:space="preserve">
+    <value>CGPE: El campo "URL" es obligatorio.</value>
+  </data>
+  <data name="ZipCodeInvalidValidation" xml:space="preserve">
+    <value>CGPE: El código postal no es valido. El formato correcto es un valor numérico de 4 a 5 posiciones.</value>
+  </data>
+  <data name="CurrentSituationRequiredValidation" xml:space="preserve">
+    <value>CGPE: La situación de habilitación actual es obligatoria.</value>
+  </data>
+  <data name="AssociationProcuratorAssociationRequiredValidation" xml:space="preserve">
+    <value>CGPE: El colegio de la colegiación es obligatorio.</value>
+  </data>
+  <data name="AssociationCodeInvalidValidation" xml:space="preserve">
+    <value>CGPE: El código del colegio tiene un formato incorrecto. Debe estar compuesto por una P seguida de cinco dígitos.</value>
+  </data>
+  <data name="AssociationCodeRequiredValidation" xml:space="preserve">
+    <value>CGPE: El código del colegio es obligatorio.</value>
+  </data>
+  <data name="CifInvalidValidation" xml:space="preserve">
+    <value>CGPE: El formatio del CIF no es correcto.</value>
+  </data>
+  <data name="CifRequiredValidation" xml:space="preserve">
+    <value>CGPE: El CIF es obligatorio.</value>
+  </data>
+  <data name="NameTooLongValidation" xml:space="preserve">
+    <value>CGPE: El nombre es demasiado largo. Su longitud no deber superar los {0} caracteres.</value>
+  </data>
+  <data name="RoleAtLeastOneRequiredValidation" xml:space="preserve">
+    <value>CGPE: El usuario debe tener asignado al menos un rol.</value>
+  </data>
+  <data name="RolesAssociationAndCpgeIncompatibleValidation" xml:space="preserve">
+    <value>CGPE: Los roles Consejo y Colegio son incompatibles entre sí.</value>
+  </data>
+  <data name="SecondName1TooLongValidation" xml:space="preserve">
+    <value>CGPE: El primer apellido es demasiado largo. Su longitud no deber superar los {0} caracteres.</value>
+  </data>
+  <data name="SecondName2TooLongValidation" xml:space="preserve">
+    <value>CGPE: El segundo apellido es demasiado largo. Su longitud no deber superar los {0} caracteres.</value>
+  </data>
+  <data name="BirthCityTooLongValidation" xml:space="preserve">
+    <value>CGPE: El nombre de la ciudad natal es demasiado largo. Su longitud no deber superar los {0} caracteres.</value>
+  </data>
+</root>
