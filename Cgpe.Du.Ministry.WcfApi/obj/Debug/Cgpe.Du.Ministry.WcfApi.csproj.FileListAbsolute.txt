@@ -728,3 +728,13 @@ D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\ru\System.
 D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\zh-Hans\System.Spatial.resources.dll
 D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\zh-Hant\System.Spatial.resources.dll
 D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\obj\Debug\Cgpe.Du.Ministry.WcfApi.csproj.CopyComplete
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\Microsoft.EntityFrameworkCore.dll
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\Microsoft.EntityFrameworkCore.xml
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\Microsoft.EntityFrameworkCore.Design.dll
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\Microsoft.EntityFrameworkCore.Design.xml
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\Microsoft.EntityFrameworkCore.Proxies.xml
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\bin\Microsoft.EntityFrameworkCore.Relational.xml
