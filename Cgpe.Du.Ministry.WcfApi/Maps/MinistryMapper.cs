@@ -149,7 +149,7 @@ namespace Cgpe.Du.Ministry.WcfApi.Maps
             return target;
         }
 
-        private string[] MapProcuratorContacts(Procurator source, Guid contactTypeId)
+        private string[] MapProcuratorContacts(Procurator source, string contactTypeId)
         {
             if (source == null || source.AssociationsProcurators == null || source.AssociationsProcurators.Count == 0)
             {
@@ -220,7 +220,7 @@ namespace Cgpe.Du.Ministry.WcfApi.Maps
             }
         }
 
-        private string[] MapAssociationsProcuratorsContacts(List<AssociationProcurator> source, Guid contactTypeId)
+        private string[] MapAssociationsProcuratorsContacts(List<AssociationProcurator> source, string contactTypeId)
         {
             if (source == null || source.Count == 0)
             {
@@ -239,7 +239,7 @@ namespace Cgpe.Du.Ministry.WcfApi.Maps
             }
         }
 
-        private string[] MapAssociationProcuratorContacts(AssociationProcurator source, Guid contactTypeId)
+        private string[] MapAssociationProcuratorContacts(AssociationProcurator source, string contactTypeId)
         {
             if (source == null || source.AssociationProcuratorAddresses == null || source.AssociationProcuratorAddresses.Count == 0)
             {
@@ -251,7 +251,7 @@ namespace Cgpe.Du.Ministry.WcfApi.Maps
             }
         }
 
-        private string[] MapAddressesContacts(List<Address> source, Guid contactTypeId)
+        private string[] MapAddressesContacts(List<Address> source, string contactTypeId)
         {
             if (source == null || source.Count == 0)
             {
@@ -268,7 +268,7 @@ namespace Cgpe.Du.Ministry.WcfApi.Maps
             }
         }
 
-        private string[] MapAddressContacts(Address source, Guid contactTypeId)
+        private string[] MapAddressContacts(Address source, string contactTypeId)
         {
             if (source == null || source.Contacts == null || source.Contacts.Count == 0)
             {
@@ -281,7 +281,7 @@ namespace Cgpe.Du.Ministry.WcfApi.Maps
         }
 
 
-        private string[] MapContacts(List<Contact> source, Guid contactTypeId)
+        private string[] MapContacts(List<Contact> source, string contactTypeId)
         {
             if (source == null || source.Count == 0)
             {
@@ -309,8 +309,8 @@ namespace Cgpe.Du.Ministry.WcfApi.Maps
                 {
                     if (
                         (string.IsNullOrWhiteSpace(source[i].FullAddress) && string.IsNullOrWhiteSpace(source[i].WayName))
-                        || (source[i].Province == null || source[i].Province.ProvinceId == null || source[i].Province.ProvinceId == Guid.Empty)
-                        || (source[i].City == null || source[i].City.CityId == null || source[i].City.CityId == Guid.Empty)
+                        || (source[i].Province == null || source[i].Province.ProvinceId == null || source[i].Province.ProvinceId == string.Empty)
+                        || (source[i].City == null || source[i].City.CityId == null || source[i].City.CityId == string.Empty)
                         )
                     {
                         continue;

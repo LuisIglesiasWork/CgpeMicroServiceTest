@@ -12,3 +12,17 @@ C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du
 C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\refint\Cgpe.Du.Domain.Entities.dll
 C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\Cgpe.Du.Domain.Entities.pdb
 C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\ref\Cgpe.Du.Domain.Entities.dll
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\bin\Debug\net6.0\Cgpe.Du.Domain.Entities.deps.json
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\bin\Debug\net6.0\Cgpe.Du.Domain.Entities.dll
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\bin\Debug\net6.0\Cgpe.Du.Domain.Entities.pdb
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\Cgpe.Du.Domain.Entities.csproj.AssemblyReference.cache
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\Cgpe.Du.Domain.Entities.Properties.Resources.resources
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\Cgpe.Du.Domain.Entities.csproj.GenerateResource.cache
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\Cgpe.Du.Domain.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\Cgpe.Du.Domain.Entities.AssemblyInfoInputs.cache
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\Cgpe.Du.Domain.Entities.AssemblyInfo.cs
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\Cgpe.Du.Domain.Entities.csproj.CoreCompileInputs.cache
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\Cgpe.Du.Domain.Entities.dll
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\refint\Cgpe.Du.Domain.Entities.dll
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\Cgpe.Du.Domain.Entities.pdb
+D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Domain.Entities\obj\Debug\net6.0\ref\Cgpe.Du.Domain.Entities.dll

@@ -93,85 +93,6 @@
           }
         }
       },
-      "Libuv/1.10.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1"
-        },
-        "runtimeTargets": {
-          "runtimes/linux-arm/native/libuv.so": {
-            "assetType": "native",
-            "rid": "linux-arm"
-          },
-          "runtimes/linux-arm64/native/libuv.so": {
-            "assetType": "native",
-            "rid": "linux-arm64"
-          },
-          "runtimes/linux-armel/native/libuv.so": {
-            "assetType": "native",
-            "rid": "linux-armel"
-          },
-          "runtimes/linux-x64/native/libuv.so": {
-            "assetType": "native",
-            "rid": "linux-x64"
-          },
-          "runtimes/osx/native/libuv.dylib": {
-            "assetType": "native",
-            "rid": "osx"
-          },
-          "runtimes/win-arm/native/libuv.dll": {
-            "assetType": "native",
-            "rid": "win-arm"
-          },
-          "runtimes/win-x64/native/libuv.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/native/libuv.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Connections.Abstractions/6.0.14": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Features": "6.0.14",
-          "System.IO.Pipelines": "6.0.3"
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv/6.0.14": {
-        "type": "package",
-        "dependencies": {
-          "Libuv": "1.10.0",
-          "Microsoft.AspNetCore.Connections.Abstractions": "6.0.14",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.3",
-          "Microsoft.Extensions.Options": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Microsoft.EntityFrameworkCore/7.0.3": {
         "type": "package",
         "dependencies": {
@@ -467,19 +388,6 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Features/6.0.14": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Microsoft.Extensions.Features.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Features.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.Extensions.FileProviders.Abstractions/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -747,19 +655,6 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/13.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Portable.BouncyCastle/1.9.0": {
         "type": "package",
         "compile": {
@@ -877,22 +772,6 @@
           "ref/netstandard1.5/System.IO.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "System.IO.Pipelines/6.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/System.IO.Pipelines.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.IO.Pipelines.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -1138,37 +1017,6 @@
             "rid": "win"
           }
         }
-      },
-      "Cgpe.Du.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Cgpe.Du.Domain.Entities": "1.0.0",
-          "Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv": "6.0.14",
-          "Microsoft.EntityFrameworkCore": "7.0.3",
-          "MySqlConnector": "2.2.5",
-          "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "13.0.2"
-        },
-        "compile": {
-          "bin/placeholder/Cgpe.Du.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Cgpe.Du.Domain.dll": {}
-        }
-      },
-      "Cgpe.Du.Domain.Entities/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "NETStandard.Library": "2.0.3"
-        },
-        "compile": {
-          "bin/placeholder/Cgpe.Du.Domain.Entities.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Cgpe.Du.Domain.Entities.dll": {}
-        }
       }
     }
   },
@@ -1295,62 +1143,6 @@
         "lib/netstandard1.6/K4os.Hash.xxHash.xml",
         "lib/netstandard2.0/K4os.Hash.xxHash.dll",
         "lib/netstandard2.0/K4os.Hash.xxHash.xml"
-      ]
-    },
-    "Libuv/1.10.0": {
-      "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
-      "type": "package",
-      "path": "libuv/1.10.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License.txt",
-        "libuv.1.10.0.nupkg.sha512",
-        "libuv.nuspec",
-        "runtimes/linux-arm/native/libuv.so",
-        "runtimes/linux-arm64/native/libuv.so",
-        "runtimes/linux-armel/native/libuv.so",
-        "runtimes/linux-x64/native/libuv.so",
-        "runtimes/osx/native/libuv.dylib",
-        "runtimes/win-arm/native/libuv.dll",
-        "runtimes/win-x64/native/libuv.dll",
-        "runtimes/win-x86/native/libuv.dll"
-      ]
-    },
-    "Microsoft.AspNetCore.Connections.Abstractions/6.0.14": {
-      "sha512": "SF1h3vA3qb2x+X9wUcRu3Wt/zwb3ycHnS6Hwgjp/pdfUHTgYAPWhuL1fCh4IZKTE8U/4PwgwaS0kllHzL2X5bg==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.connections.abstractions/6.0.14",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/Microsoft.AspNetCore.Connections.Abstractions.dll",
-        "lib/net461/Microsoft.AspNetCore.Connections.Abstractions.xml",
-        "lib/net6.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
-        "lib/net6.0/Microsoft.AspNetCore.Connections.Abstractions.xml",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.xml",
-        "lib/netstandard2.1/Microsoft.AspNetCore.Connections.Abstractions.dll",
-        "lib/netstandard2.1/Microsoft.AspNetCore.Connections.Abstractions.xml",
-        "microsoft.aspnetcore.connections.abstractions.6.0.14.nupkg.sha512",
-        "microsoft.aspnetcore.connections.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv/6.0.14": {
-      "sha512": "ax42tgCxa6Z1RG/PLzLad8cKcSxv3pP1amK5/veY1x9HnmIYZZ09S8OF5LTi9BWfqQAF5DPJH4bAd9xgib0DhQ==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.server.kestrel.transport.libuv/6.0.14",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net6.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll",
-        "lib/net6.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.xml",
-        "microsoft.aspnetcore.server.kestrel.transport.libuv.6.0.14.nupkg.sha512",
-        "microsoft.aspnetcore.server.kestrel.transport.libuv.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore/7.0.3": {
@@ -1712,25 +1504,6 @@
         "microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
         "microsoft.extensions.dependencymodel.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "Microsoft.Extensions.Features/6.0.14": {
-      "sha512": "OOx98VV86QnpBvFZHB66qU329izfsoRu+XiGLnysE+osRKnOwcHdKfj/mMzxWtxJ1+AM6wbXsVQ3jcZc8zO8ww==",
-      "type": "package",
-      "path": "microsoft.extensions.features/6.0.14",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/Microsoft.Extensions.Features.dll",
-        "lib/net461/Microsoft.Extensions.Features.xml",
-        "lib/net6.0/Microsoft.Extensions.Features.dll",
-        "lib/net6.0/Microsoft.Extensions.Features.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Features.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Features.xml",
-        "microsoft.extensions.features.6.0.14.nupkg.sha512",
-        "microsoft.extensions.features.nuspec"
       ]
     },
     "Microsoft.Extensions.FileProviders.Abstractions/7.0.0": {
@@ -2275,36 +2048,6 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/13.0.2": {
-      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
-      "type": "package",
-      "path": "newtonsoft.json/13.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.md",
-        "README.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/net6.0/Newtonsoft.Json.dll",
-        "lib/net6.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "packageIcon.png"
-      ]
-    },
     "Portable.BouncyCastle/1.9.0": {
       "sha512": "eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
       "type": "package",
@@ -2546,31 +2289,6 @@
         "ref/xamarinwatchos10/_._",
         "system.io.4.3.0.nupkg.sha512",
         "system.io.nuspec"
-      ]
-    },
-    "System.IO.Pipelines/6.0.3": {
-      "sha512": "ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw==",
-      "type": "package",
-      "path": "system.io.pipelines/6.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.IO.Pipelines.dll",
-        "lib/net461/System.IO.Pipelines.xml",
-        "lib/net6.0/System.IO.Pipelines.dll",
-        "lib/net6.0/System.IO.Pipelines.xml",
-        "lib/netcoreapp3.1/System.IO.Pipelines.dll",
-        "lib/netcoreapp3.1/System.IO.Pipelines.xml",
-        "lib/netstandard2.0/System.IO.Pipelines.dll",
-        "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.6.0.3.nupkg.sha512",
-        "system.io.pipelines.nuspec",
-        "useSharedDesignerContext.txt"
       ]
     },
     "System.Memory/4.5.4": {
@@ -3299,21 +3017,10 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "Cgpe.Du.Domain/1.0.0": {
-      "type": "project",
-      "path": "../Cgpe.Du.Domain/Cgpe.Du.Domain.csproj",
-      "msbuildProject": "../Cgpe.Du.Domain/Cgpe.Du.Domain.csproj"
-    },
-    "Cgpe.Du.Domain.Entities/1.0.0": {
-      "type": "project",
-      "path": "../Cgpe.Du.Domain.Entities/Cgpe.Du.Domain.Entities.csproj",
-      "msbuildProject": "../Cgpe.Du.Domain.Entities/Cgpe.Du.Domain.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Cgpe.Du.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.3",
       "Microsoft.EntityFrameworkCore.Proxies >= 7.0.3",
@@ -3360,11 +3067,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Domain\\Cgpe.Du.Domain.csproj": {
-              "projectPath": "D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe.Du.Domain\\Cgpe.Du.Domain.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -3450,7 +3153,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

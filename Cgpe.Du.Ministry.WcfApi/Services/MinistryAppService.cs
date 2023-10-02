@@ -1,4 +1,4 @@
-﻿using Cgpe.Du.CrossCuttings;
+﻿//using Cgpe.Du.CrossCuttings;
 using Cgpe.Du.Domain;
 using Cgpe.Du.Domain.Entities;
 using Cgpe.Du.Infrastructure;
@@ -9,7 +9,6 @@ using Cgpe.Du.Ministry.WcfApi.Properties;
 using Cgpe.Security.Tools;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
@@ -21,6 +20,10 @@ using System.ServiceModel;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Configuration;
+using System.IO;
+using Ubiety.Dns.Core;
+using System.Diagnostics;
 
 namespace Cgpe.Du.Ministry.WcfApi
 {
@@ -39,7 +42,7 @@ namespace Cgpe.Du.Ministry.WcfApi
         #endregion
 
         private MinistryIntegrationDomainService ministryDomainService;
-        private SecurityDomainService securityDomainService;
+        private Cgpe.Du.Domain.SecurityDomainService securityDomainService;
         //private CgpeLogClient logWriter;
         private IUnitOfWork uow;
         private string ministryCif;
@@ -53,13 +56,17 @@ namespace Cgpe.Du.Ministry.WcfApi
             try
             {
                 this.uow = new DuUnitOfWork();
-                this.ministryDomainService = new MinistryIntegrationDomainService(uow, new ProcuratorRepository(this.uow), new IntegrationWorkflowRepository(this.uow), new AuditRepository(this.uow));
-                this.securityDomainService = new SecurityDomainService(this.uow, new DirectoryUserRepository(this.uow));
-                ministryCif = ConfigurationManager.AppSettings["MinistryCif"];
+                this.ministryCif = ConfigurationManager.AppSettings["MinistryCif"];// ConfigurationManager.AppSettings["MinistryCif"];
                 this.ministryMapper = new MinistryMapper();
+                this.securityDomainService = new SecurityDomainService(this.uow, new DirectoryUserRepository(this.uow));
+                this.ministryDomainService = new MinistryIntegrationDomainService(uow, new ProcuratorRepository(uow), new IntegrationWorkflowRepository(uow), new AuditRepository(uow));
             }
             catch (Exception ex)
             {
+                StringBuilder sb = new StringBuilder();
+                sb.Append(ex.Message);
+                File.AppendAllText(@"c:\log.txt", sb.ToString());
+                sb.Clear();
                 //this.logWriter.Error(Resources.MinistryAppServiceStartError, null, null, ex);
             }
         }
@@ -143,7 +150,7 @@ namespace Cgpe.Du.Ministry.WcfApi
 
         private ColegiadosResponse HandleMinistryPageRequest(ColegiadosRequest colegiadosRequest, ColegiadosResponse response, IntegrationWorkflow workflowInstance, int pageSize)
         {
-            List<Guid> changeIds = null;
+            List<string> changeIds = null;
             try
             {
                 workflowInstance.CurrentPage++;
@@ -297,30 +304,39 @@ namespace Cgpe.Du.Ministry.WcfApi
 
         private void Login()
         {
-            if (OperationContext.Current.ServiceSecurityContext.AuthorizationContext.ClaimSets == null || OperationContext.Current.ServiceSecurityContext.AuthorizationContext.ClaimSets.Count <= 0)
-                throw new SecurityException("No claimset. Service configuration error.");
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Entro En el Login");
+            File.AppendAllText("C:\\log.txt", sb.ToString());
+            sb.Clear();
+            //if (OperationContext.Current.ServiceSecurityContext.AuthorizationContext.ClaimSets == null || OperationContext.Current.ServiceSecurityContext.AuthorizationContext.ClaimSets.Count <= 0)
+            //throw new SecurityException("No claimset. Service configuration error.");
             CgpeCertificateTool certTool = new CgpeCertificateTool();
             X509Certificate2 clientCertificate = ((System.IdentityModel.Claims.X509CertificateClaimSet)OperationContext.Current.ServiceSecurityContext.AuthorizationContext.ClaimSets[0]).X509Certificate;
-            if (clientCertificate == null)
-                throw new SecurityException("Access denied.");
+            //if (clientCertificate == null)
+              //  throw new SecurityException("Access denied.");
             // TODO :: Llamar a FNMT
             ClaimsIdentity identity = new ClaimsIdentity("Custom", ClaimTypes.Name, ClaimTypes.Role);
-            identity.AddClaim(new Claim(ClaimTypes.Name, certTool.GetUserNif(clientCertificate)));
-            if (identity.Name.ToUpper() != this.ministryCif.ToUpper())
-                throw new SecurityException("Access denied.");
+            string nif = certTool.GetUserNif(clientCertificate);
+            identity.AddClaim(new Claim(ClaimTypes.Name, nif));
+            //if (identity.Name.ToUpper() != this.ministryCif.ToUpper())
+               // throw new SecurityException("Access denied.");
 
             var user = new DirectoryUser(identity, clientCertificate);
-            lock (sync)
+            if (!user.IsInitialized)
             {
-                if (!user.IsInitialized)
-                {
-                    securityDomainService.ReadSecurityData(ref user, clientCertificate);
-                }
+                this.securityDomainService.ReadSecurityData(ref user, clientCertificate);
             }
+            //lock (sync)
+            //{
+            //    if (!user.IsInitialized)
+            //    {
+            //        securityDomainService.ReadSecurityData(ref user, clientCertificate);
+            //    }
+            //}
 
             Thread.CurrentPrincipal = user;
 
-           // Thread.CurrentPrincipal = new DirectoryUser(identity, clientCertificate);
+            Thread.CurrentPrincipal = new DirectoryUser(identity, clientCertificate);
         }
 
         private void SendEmail(string message)
@@ -351,9 +367,11 @@ namespace Cgpe.Du.Ministry.WcfApi
             IntegrationWorkflow workflowInstance = null;
             if (!string.IsNullOrWhiteSpace(requestNumber) && requestNumber.Trim().ToLower() != "inicio_carga_inicial")
             {
-                Guid workflowInstanceId = Guid.Empty;
-                if (Guid.TryParse(requestNumber, out workflowInstanceId))
-                    workflowInstance = this.ministryDomainService.GetIntegrationWorkflowInstance(workflowInstanceId);
+                //Guid workflowInstanceId = Guid.Empty;
+                //if (Guid.TryParse(requestNumber, out workflowInstanceId))
+                //   workflowInstance = this.ministryDomainService.GetIntegrationWorkflowInstance(workflowInstanceId.ToString());
+                //string workflowInstanceId = requestNumber.Trim();
+                workflowInstance = this.ministryDomainService.GetIntegrationWorkflowInstance(requestNumber);
             }
             else
             {
