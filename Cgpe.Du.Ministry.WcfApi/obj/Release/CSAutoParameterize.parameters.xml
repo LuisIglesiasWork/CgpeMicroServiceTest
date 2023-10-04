@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DuDataBase-Web.config Connection String" description="DuDataBase Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Server=104.155.74.250;Port=3306;Database=DU3_PRE-ADDRESSES-FIXED;Uid=du3_pre;Pwd=Bbgm68^04;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Documentos\\GitHub\\CgpeMicroServiceTest\\Cgpe\.Du\.Ministry\.WcfApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DuDataBase']/@connectionString" />
+  </parameter>
+</parameters>

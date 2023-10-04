@@ -39,6 +39,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -60,14 +61,17 @@
     <Reference Include="Cgpe.Security.Tools">
       <HintPath>C:\Users\lIgle\source\repos\ConsoleApp1\Cgpe.Security.Tools\bin\Debug\netstandard2.0\Cgpe.Security.Tools.dll</HintPath>
     </Reference>
-    <Reference Include="CrossCuttings_48">
-      <HintPath>..\..\..\TEst\CGPE.DU3.MICROSERVICES\CrossCuttings_48\bin\Debug\CrossCuttings_48.dll</HintPath>
+    <Reference Include="CrossCuttings_48, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CrossCuttings_48\bin\Debug\CrossCuttings_48.dll</HintPath>
     </Reference>
-    <Reference Include="Domian_48">
-      <HintPath>..\..\..\TEst\CGPE.DU3.MICROSERVICES\Domian_48\bin\Debug\Domian_48.dll</HintPath>
+    <Reference Include="Domian_48, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Domian_48\bin\Debug\Domian_48.dll</HintPath>
     </Reference>
-    <Reference Include="Entities_48">
-      <HintPath>..\..\..\TEst\CGPE.DU3.MICROSERVICES\Entities_48\bin\Debug\Entities_48.dll</HintPath>
+    <Reference Include="Entities_48, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Entities_48\bin\Debug\Entities_48.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -81,8 +85,9 @@
       <HintPath>..\packages\Google.Protobuf.3.21.9\lib\net45\Google.Protobuf.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Infraestructure_48">
-      <HintPath>..\..\..\TEst\CGPE.DU3.MICROSERVICES\Infraestructure_48\bin\Debug\Infraestructure_48.dll</HintPath>
+    <Reference Include="Infraestructure_48, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Infrastructure_48\bin\Debug\Infraestructure_48.dll</HintPath>
     </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Compression.LZ4.1.3.5\lib\net462\K4os.Compression.LZ4.dll</HintPath>
@@ -524,6 +529,11 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Services\MinistryAppService.cs" />
     <Compile Include="Tracking\DirectoryTrackingBehaviorExtensionElement.cs" />
     <Compile Include="Tracking\DirectoryTrackingEndpointBehavior.cs" />
@@ -540,6 +550,10 @@
     </None>
     <None Include="Dockerfile" />
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -568,7 +582,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52728</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:44318/</IISUrl>
+          <IISUrl>http://localhost:52728/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

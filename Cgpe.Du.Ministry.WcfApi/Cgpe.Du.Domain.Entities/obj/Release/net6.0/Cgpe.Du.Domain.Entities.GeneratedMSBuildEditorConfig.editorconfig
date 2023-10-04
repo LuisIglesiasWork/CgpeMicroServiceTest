@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Cgpe.Du.Domain.Entities
-build_property.ProjectDir = C:\Users\lIgle\source\repos\CGPE.DU3.MICROSERVICES\Cgpe.Du.CrossCuttings\Cgpe.Du.Ministry.WcfApi\Cgpe.Du.Domain.Entities\
+build_property.ProjectDir = D:\Documentos\GitHub\CgpeMicroServiceTest\Cgpe.Du.Ministry.WcfApi\Cgpe.Du.Domain.Entities\

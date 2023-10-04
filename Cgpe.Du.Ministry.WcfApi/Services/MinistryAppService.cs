@@ -52,7 +52,11 @@ namespace Cgpe.Du.Ministry.WcfApi
 
         public MinistryAppService()
         {
-           // this.logWriter = new CgpeLogClient(DuMessageBusManager.MessageBus);
+            //StringBuilder sb1 = new StringBuilder();
+            //sb1.Append('C');
+            //File.AppendAllText(@"c:\log.txt", sb1.ToString());
+            //sb1.Clear();
+            // this.logWriter = new CgpeLogClient(DuMessageBusManager.MessageBus);
             try
             {
                 this.uow = new DuUnitOfWork();
@@ -63,10 +67,6 @@ namespace Cgpe.Du.Ministry.WcfApi
             }
             catch (Exception ex)
             {
-                StringBuilder sb = new StringBuilder();
-                sb.Append(ex.Message);
-                File.AppendAllText(@"c:\log.txt", sb.ToString());
-                sb.Clear();
                 //this.logWriter.Error(Resources.MinistryAppServiceStartError, null, null, ex);
             }
         }
@@ -304,10 +304,10 @@ namespace Cgpe.Du.Ministry.WcfApi
 
         private void Login()
         {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("Entro En el Login");
-            File.AppendAllText("C:\\log.txt", sb.ToString());
-            sb.Clear();
+            //StringBuilder sb = new StringBuilder();
+            //sb.Append("Entro En el Login");
+            //File.AppendAllText(@"c:\log.txt", sb.ToString());
+            //sb.Clear();
             //if (OperationContext.Current.ServiceSecurityContext.AuthorizationContext.ClaimSets == null || OperationContext.Current.ServiceSecurityContext.AuthorizationContext.ClaimSets.Count <= 0)
             //throw new SecurityException("No claimset. Service configuration error.");
             CgpeCertificateTool certTool = new CgpeCertificateTool();
