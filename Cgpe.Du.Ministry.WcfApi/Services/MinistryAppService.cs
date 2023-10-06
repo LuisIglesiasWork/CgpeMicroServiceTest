@@ -52,11 +52,6 @@ namespace Cgpe.Du.Ministry.WcfApi
 
         public MinistryAppService()
         {
-            //StringBuilder sb1 = new StringBuilder();
-            //sb1.Append('C');
-            //File.AppendAllText(@"c:\log.txt", sb1.ToString());
-            //sb1.Clear();
-            // this.logWriter = new CgpeLogClient(DuMessageBusManager.MessageBus);
             try
             {
                 this.uow = new DuUnitOfWork();
@@ -304,22 +299,19 @@ namespace Cgpe.Du.Ministry.WcfApi
 
         private void Login()
         {
-            //StringBuilder sb = new StringBuilder();
-            //sb.Append("Entro En el Login");
-            //File.AppendAllText(@"c:\log.txt", sb.ToString());
-            //sb.Clear();
-            //if (OperationContext.Current.ServiceSecurityContext.AuthorizationContext.ClaimSets == null || OperationContext.Current.ServiceSecurityContext.AuthorizationContext.ClaimSets.Count <= 0)
-            //throw new SecurityException("No claimset. Service configuration error.");
+            
+            if (OperationContext.Current.ServiceSecurityContext.AuthorizationContext.ClaimSets == null || OperationContext.Current.ServiceSecurityContext.AuthorizationContext.ClaimSets.Count <= 0)
+                throw new SecurityException("No claimset. Service configuration error.");
             CgpeCertificateTool certTool = new CgpeCertificateTool();
             X509Certificate2 clientCertificate = ((System.IdentityModel.Claims.X509CertificateClaimSet)OperationContext.Current.ServiceSecurityContext.AuthorizationContext.ClaimSets[0]).X509Certificate;
-            //if (clientCertificate == null)
-              //  throw new SecurityException("Access denied.");
+            if (clientCertificate == null)
+                throw new SecurityException("Access denied.");
             // TODO :: Llamar a FNMT
             ClaimsIdentity identity = new ClaimsIdentity("Custom", ClaimTypes.Name, ClaimTypes.Role);
             string nif = certTool.GetUserNif(clientCertificate);
             identity.AddClaim(new Claim(ClaimTypes.Name, nif));
-            //if (identity.Name.ToUpper() != this.ministryCif.ToUpper())
-               // throw new SecurityException("Access denied.");
+            if (identity.Name.ToUpper() != this.ministryCif.ToUpper())
+                throw new SecurityException("Access denied.");
 
             var user = new DirectoryUser(identity, clientCertificate);
             if (!user.IsInitialized)

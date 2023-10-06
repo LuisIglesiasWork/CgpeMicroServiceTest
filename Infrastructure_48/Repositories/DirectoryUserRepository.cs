@@ -176,11 +176,12 @@ namespace Cgpe.Du.Infrastructure
         public DirectoryUser ReadByNif(string nif)
         {
             DirectoryUserEntity userEntity =
-                uow.DbContext.DirectoryUsers//.Include(x => x.Association)
+                uow.DbContext.DirectoryUsers.Where(u => u.Nif == nif).FirstOrDefault();
+                //.Include(x => x.Association)
                    // .Include(x => x.DirectoryRoles.Select(y => y.Role).Select(z => z.Claims.Select(w => w.Claim)))
                     //.ThenInclude(y => y.Role).ThenInclude(z => z.Claims).ThenInclude(w => w.Claim)
                     //.Include(x => x.DirectoryUserCertificates)
-                    .Where(u => u.Nif == nif).FirstOrDefault();
+                    //.Where(u => u.Nif == nif).FirstOrDefault();
 
             DirectoryUser user = null;
 

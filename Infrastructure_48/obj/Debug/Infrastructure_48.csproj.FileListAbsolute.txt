@@ -51,8 +51,6 @@ D:\Documentos\GitHub\CgpeMicroServiceTest\Infrastructure_48\bin\Debug\System.Tex
 D:\Documentos\GitHub\CgpeMicroServiceTest\Infrastructure_48\bin\Debug\System.Text.Json.dll
 D:\Documentos\GitHub\CgpeMicroServiceTest\Infrastructure_48\bin\Debug\System.Threading.Tasks.Extensions.dll
 D:\Documentos\GitHub\CgpeMicroServiceTest\Infrastructure_48\bin\Debug\System.ValueTuple.dll
-D:\Documentos\GitHub\CgpeMicroServiceTest\Infrastructure_48\bin\Debug\Ubiety.Dns.Core.dll
-D:\Documentos\GitHub\CgpeMicroServiceTest\Infrastructure_48\bin\Debug\Zstandard.Net.dll
 D:\Documentos\GitHub\CgpeMicroServiceTest\Infrastructure_48\bin\Debug\Newtonsoft.Json.dll
 D:\Documentos\GitHub\CgpeMicroServiceTest\Infrastructure_48\bin\Debug\Domian_48.pdb
 D:\Documentos\GitHub\CgpeMicroServiceTest\Infrastructure_48\bin\Debug\Domian_48.dll.config
